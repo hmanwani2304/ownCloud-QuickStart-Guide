@@ -169,7 +169,7 @@ After meeting the above system requirements, perform the following steps to inst
 
     **NOTE:** This option does not have any effect without GUI.
 
-##### Installation Wizard
+**Installation Wizard**
 
 The installation wizard enables the user to perform the configuration and account setup process. When the installation wizard launches:
 
