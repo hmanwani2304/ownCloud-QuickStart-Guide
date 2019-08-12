@@ -17,7 +17,7 @@ Database         | MariaDB 10+
 Web Server       | Apache 2.4 with `prefork` and `mod_php`
 PHP Runtime      | 7.2
 
-For more information, please refer [System Requirements for ownCloud](https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html).
+For more information about supported environments, please refer [System Requirements for ownCloud](https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html).
 
 ## Installing ownCloud with Docker
 
@@ -110,9 +110,7 @@ To create a new user:
 You can set a new user password in ownCloud, however, you cannot recover one. To set a new user password:
 
 1. Hover the cursor over the user's **Password** field.
-
 2. Select the **[Pencil]** icon.
-
 3. Enter the user's new password in the **Password** field.
 
     **NOTE:** Ensure that you provide the password to the user.
@@ -124,9 +122,7 @@ You can set a new user password in ownCloud, however, you cannot recover one. To
 To delete a user:
 
 1. Open the **Users** page.
-
 2. Hover your cursor over a user's name.
-
 3. Click the **[trashcan]** icon.
 
     A confirmation dialog appears. Select **Yes** to delete the user and related files permanently, otherwise select **No**.
@@ -214,14 +210,12 @@ A screen with the download link appears, which redirects to the Google Play Stor
 
 ![ownCloud Mobile Client](https://doc.owncloud.com/android/_images/android-1.png)
 
-For more information and source code, please refer the [ownCloud download page](https://owncloud.org/download/#mobile).
+For more information and source code, please refer [ownCloud download page](https://owncloud.org/download/#mobile).
 
 To connect to the ownCloud server:
 
 1. Enter the server URL.
-
 2. Enter the ownCloud credentials.
-
 3. Select **[>]**.
 
   ![ownCloud Server connect Mobile App](https://doc.owncloud.com/android/_images/android-2.png)
@@ -232,4 +226,4 @@ Similar to the Android apps, the user can find the download link for ownCloud iO
 
 After launching the ownCloud iOS app, enter the server URL and login credentials, it connects the user to the Files page.
 
-For more information, refer to the [installation](https://owncloud.org/download/) page.
+For more information about iOS app installation, please refer the [installation](https://owncloud.org/download/) page.
