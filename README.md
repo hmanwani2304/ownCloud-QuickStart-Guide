@@ -187,7 +187,7 @@ The installation wizard enables the user to perform the configuration and accoun
 
     ![Client Installation Sync](https://doc.owncloud.com/desktop/_images/client-3.png)
 
-4. Click **Connect**.
+4. Click **Connect** button.
 
     The client connects to the ownCloud server and displays two buttons to:
 
