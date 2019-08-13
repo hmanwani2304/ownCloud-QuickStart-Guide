@@ -4,7 +4,7 @@ This guide describes the information about installing, configuring, and connecti
 
 # Installation and Configuration
 
-This section describes the installation process for ownCloud with Docker. To install ownCloud manually, please refer [Manual Installation](https://doc.owncloud.org/server/10.2/admin_manual/installation/manual_installation.html).
+This section describes the installation process for ownCloud with Docker. To perform the manual installation for ownCloud, see [Manual Installation](https://doc.owncloud.org/server/10.2/admin_manual/installation/manual_installation.html).
 
 ## System Requirements
 
@@ -17,7 +17,7 @@ Database         | MariaDB 10+
 Web Server       | Apache 2.4 with `prefork` and `mod_php`
 PHP Runtime      | 7.2
 
-For more information about supported environments, please refer [System Requirements for ownCloud](https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html).
+For more information about supported environments, refer [System Requirements for ownCloud](https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html).
 
 ## Installing ownCloud with Docker
 
@@ -73,7 +73,7 @@ Perform the following steps to start the installation on your local machine.
 
 5. Verify that the containers are running successfully. To verify run `docker-compose ps`.
 
-    **NOTE:** When all containers are running successfully, the ownCloud takes some time to be completely functional. If you run `docker-compose logs --follow owncloud` and see a significant amount of information logging to the console, then wait until it slows down to attempting the access of web UI.
+    **NOTE:** When all containers are running successfully, the ownCloud takes time to be completely functional. If you run `docker-compose logs --follow owncloud` and see a significant amount of information logging to the console, then wait until it slows down to access the web UI.
 
 ## Logging In to the Web UI
 
@@ -87,23 +87,23 @@ To log in to the ownCloud UI:
 
     ![ownCloud UI](https://doc.owncloud.com/server/10.2/admin_manual/_images/docker/owncloud-ui-login.png)
 
-2. Enter the admin username and password, which you stored in `.env` file, and press Enter.
+2. Enter the admin username and password, which you stored in `.env` file, and press **Enter**.
 
 # User Management
 
-This section describes the primary user management tasks in ownCloud, including creating a new user, resetting the password and deleting user. For more information, please refer to [User Management](https://doc.owncloud.org/server/10.2/admin_manual/configuration/user/user_configuration.html).
+This section describes the primary user management tasks in ownCloud, including creating a new user, resetting the password and deleting a specific user. For more information about user management tasks, see [User Management](https://doc.owncloud.org/server/10.2/admin_manual/configuration/user/user_configuration.html).
 
 ## Creating a New User
 
 To create a new user:
 
-1. Enter the new user's **Login Name** and related **E-Mail**.
+1. Enter the **Login Name** and **E-Mail** of the new user.
 2. Assign **Groups** memberships. This step is optional.
 3. Click the **Create** button.
 
   ![Adding new user](https://doc.owncloud.com/server/10.2/admin_manual/_images/configuration/user/users-page-new-user.png)
 
-  **TIP:** The Login names may contain letters (a-z, A-Z), numbers (0-9), and special characters.
+  **TIP:** The **Login Name** may contain letters (a-z, A-Z), numbers (0-9), and special characters.
 
 ## Resetting the Password
 
@@ -111,7 +111,7 @@ You can set a new user password in ownCloud, however, you cannot recover one. To
 
 1. Hover the cursor over the user's **Password** field.
 2. Select the **[Pencil]** icon.
-3. Enter the user's new password in the **Password** field.
+3. Enter the new password in the **Password** field.
 
     **NOTE:** Ensure that you provide the password to the user.
 
@@ -135,11 +135,11 @@ ownCloud provides a secure and compliant file sharing and synchronization soluti
 
 ## ownCloud Desktop Client
 
-A user can download ownCloud Desktop Client from the [ownCloud Download Page](https://owncloud.com/download/#desktop-clients). The Desktop client is available for Windows, macOS, and Linux.
+A user can download ownCloud Desktop Client from the [ownCloud Download](https://owncloud.com/download/#desktop-clients) page. The Desktop client is available for Windows, macOS, and Linux.
 
 ### Installing the ownCloud Desktop Client
 
-This section describes the installation for **Windows**, which is same as for any other software application. However, **Linux** users must follow the instructions provided on the [ownCloud Download Page](https://owncloud.com/download/#desktop-clients), which helps in adding an appropriate repository for their Linux distribution, installing the signing key and accessing the package managers to install the desktop client.
+This section describes the installation for **Windows**, which is same as for any other software application. However, **Linux** users must follow the instructions provided on the [ownCloud Download](https://owncloud.com/download/#desktop-clients) page, which helps in adding an appropriate repository for their Linux distribution, installing the signing key and accessing the package managers to install the desktop client.
 
 #### System Requirements
 
@@ -161,7 +161,7 @@ After meeting the above system requirements, perform the following steps to inst
     msiexec /passive /i ownCloud-x.y.z.msi ADDDEFAULT=Client
     ```
 
-2. Pass the LAUNCH property to launch the client automatically after installation.
+2. Pass the `LAUNCH` property to launch the client automatically after installation.
 
     ```
     msiexec /i ownCloud-x.y.z.msi LAUNCH="1"
@@ -173,7 +173,7 @@ After meeting the above system requirements, perform the following steps to inst
 
 The installation wizard enables the user to perform the configuration and account setup process. When the installation wizard launches:
 
-1. Enter the URL of ownCloud server, click **Next**.
+1. Enter URL of the ownCloud server, click **Next**.
 
     ![client-install1](https://doc.owncloud.com/desktop/_images/client-1.png)
 
@@ -183,20 +183,15 @@ The installation wizard enables the user to perform the configuration and accoun
 
 3. Sync all the files on the ownCloud server or select individual folders.
 
-    **TIP:** The user can also change the local folder, which displays ownCloud as a default value.
+    **TIP:** The user can also change the local folder, which displays ownCloud as the default value.
 
     ![Client Installation Sync](https://doc.owncloud.com/desktop/_images/client-3.png)
 
-4. Click **Connect** button.
+4. Click the **Connect** button.
 
-    The client connects to the ownCloud server and displays two buttons to:
+    The client connects to the ownCloud server and displays following two buttons to connect to the ownCloud Web GUI and open the local folder. Also, it starts synchronizing the files.
 
-    - Connect to the ownCloud web GUI.
-    - Open the local folder.
-
-      Also, it starts synchronizing the files.
-
-For more information about Desktop Client, please refer [Desktop Client Manual](https://doc.owncloud.com/desktop/2.5/).
+For more information about ownCloud Desktop Client, see [ownCloud Desktop Client Manual](https://doc.owncloud.com/desktop/2.5/).
 
 ## ownCloud Mobile Client
 
@@ -210,7 +205,7 @@ A screen with the download link appears, which redirects to the Google Play Stor
 
 ![ownCloud Mobile Client](https://doc.owncloud.com/android/_images/android-1.png)
 
-For more information and source code, please refer [ownCloud download page](https://owncloud.org/download/#mobile).
+For more information about source code and installation details, see [ownCloud download](https://owncloud.org/download/#mobile) page.
 
 To connect to the ownCloud server:
 
@@ -224,6 +219,6 @@ To connect to the ownCloud server:
 
 Similar to the Android apps, the user can find the download link for ownCloud iOS app on the user's page in ownCloud server when the user logs in using the Web browser in the iOS app.
 
-After launching the ownCloud iOS app, enter the server URL and login credentials, it connects the user to the Files page.
+After launching the ownCloud iOS app, enter the server URL and login credentials. It connects the user to the **Files** page.
 
-For more information about iOS app installation, please refer the [installation](https://owncloud.org/download/) page.
+For more information about iOS app installation, see the [installation](https://owncloud.org/download/) page.
